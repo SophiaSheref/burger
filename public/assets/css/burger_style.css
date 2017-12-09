@@ -3,9 +3,15 @@ body {
 }
 
 img {
-  width: 15%;
+  width: 45%;
 }
 
 .text {
-  color: #bc001f;
+  color: green;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.btn btn-success{
+	background-color: red;
+	color:#ffffff;
 }
