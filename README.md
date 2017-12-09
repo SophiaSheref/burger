@@ -8,7 +8,7 @@ https://safe-retreat-87497.herokuapp.com/
 
 ## Screen Shots
 
-![Screen shot](https://photos.google.com/album/AF1QipMS5vorbdO9tWQbqtg0UzLC8xZosadhsXsaHFMQ)
+https://photos.google.com/album/AF1QipMS5vorbdO9tWQbqtg0UzLC8xZosadhsXsaHFMQ
 
 ## Technologies used
 - Node.js
