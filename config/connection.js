@@ -7,27 +7,27 @@ var connection;
 
 
 
-connection = mysql.createConnection({
-	port: process.env.PORT || 3306,
-    host: 'k3xio06abqa902qt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user: 'mequh0cnf9leinua',
-    password: "og3owmh6krn1oqoi",
-    database: 'zgaaiwayxv11e4n1'
-});
-
-
-// // For Heroku Deployment vs. Local MySQL Database
-// if(process.env.JAWSDB_URL){
-//   connection = mysql.createConnection(process.env.JAWSDB_URL);
-// }
-// else{
-//   connection = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "",
-//   database: "burgers_db"
+// connection = mysql.createConnection({
+// 	port: process.env.PORT || 3306,
+//     host: 'k3xio06abqa902qt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+//     user: 'mequh0cnf9leinua',
+//     password: "og3owmh6krn1oqoi",
+//     database: 'zgaaiwayxv11e4n1'
 // });
-// };
+
+
+// For Heroku Deployment vs. Local MySQL Database
+if(process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+else{
+  connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "burgers_db"
+});
+};
 
 // Make connection.
 connection.connect(function(err) {
