@@ -8,6 +8,7 @@ var connection;
 
 
 connection = mysql.createConnection({
+	port: 3306,
     host: 'k3xio06abqa902qt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     user: 'mequh0cnf9leinua',
     password: "og3owmh6krn1oqoi",
@@ -23,7 +24,7 @@ connection = mysql.createConnection({
 //   connection = mysql.createConnection({
 //   host: "localhost",
 //   user: "root",
-//   password: "Xdr5Cft6",
+//   password: "",
 //   database: "burgers_db"
 // });
 // };
